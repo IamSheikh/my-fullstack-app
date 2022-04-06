@@ -5,7 +5,7 @@ import { Avatar } from '@mui/material';
 import Link from 'next/link';
 
 const Navbar = () => {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
 
   return (
     user && (
@@ -26,7 +26,7 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <Button radius='5px' bgColor='#00b4b4'>
+        <Button click={() => logout()} radius='5px' bgColor='#00b4b4'>
           Logout
         </Button>
       </nav>

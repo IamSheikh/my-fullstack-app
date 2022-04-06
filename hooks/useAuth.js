@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 const AuthContext = createContext({
   user: null,
   login: (token) => {},
+  logout: () => {},
 });
 
 export const AuthProvider = ({ children }) => {
@@ -25,9 +26,15 @@ export const AuthProvider = ({ children }) => {
     setUser(userDetails);
   };
 
+  const logout = () => {
+    localStorage.clear();
+    setUser(null);
+  };
+
   const value = {
     user,
     login,
+    logout,
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
