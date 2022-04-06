@@ -18,10 +18,10 @@ const Navbar = () => {
         <Link href={`/users/${user.username}`}>
           <a className={styles.link}>
             <div className={styles.user_container}>
-              <Avatar style={{ marginRight: '0.5rem' }}>
-                {user.firstName[0]}
-              </Avatar>
-              <h1>Hello {user.firstName}!</h1>
+              <Avatar className={styles.avatar}>{user.firstName[0]}</Avatar>
+              <h1 className={styles.text}>
+                {user.firstName} {user.lastName}
+              </h1>
             </div>
           </a>
         </Link>

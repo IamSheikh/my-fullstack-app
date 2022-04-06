@@ -21,3 +21,18 @@
   text-decoration: none;
   color: black;
 }
+
+.avatar {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .user_container {
+    .avatar {
+      margin-right: 0;
+    }
+    .text {
+      display: none;
+    }
+  }
+}
