@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_group:nth-of-type(1) {
+  margin-top: 0.5rem;
+}
+
+.form_group {
+  margin-bottom: 0.5rem;
+}
