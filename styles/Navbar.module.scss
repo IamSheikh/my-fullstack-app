@@ -4,13 +4,20 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+  align-items: center;
 }
 
 .logo {
   font-family: 'Lobster', cursive;
+  font-size: 2rem;
 }
 
 .user_container {
   display: flex;
   align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
